@@ -1,0 +1,56 @@
+---
+title: "Supplement: Helper functions for the muscle testing project"
+author: "Joachim Vandekerckhove, Beth Baribault, and Jennifer Wilson"
+date: "April 11, 2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r muscle-testing, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source('muscle-testing-helpers.R')
+```
+A collection of helper functions for the muscle testing paper.
+
+### Function: kendalls.tau()
+Computes an unnormalized Kendall's tau-a coefficient
+```{r}
+kendalls.tau
+```
+
+### Function: expected.tau()
+Computes tau for every possible outcome and tabulates the frequencies
+```{r}
+expected.tau
+```
+
+### Function: tau.matrix()
+Compute probability function for each possible level of concordance
+```{r}
+tau.matrix
+```
+
+### Function: norm()
+A normalization function
+```{r}
+norm
+```
+
+### Function: read.mt.data()
+This function will read the .csv data file from OSF and format it into a list
+```{r}
+read.mt.data
+```
+
+### Function: process.data()
+Extract the relevant subset of the muscle testing data
+```{r}
+process.data
+```
+
+### Function: run.mt()
+This function runs the analysis
+```{r}
+run.mt
+```
